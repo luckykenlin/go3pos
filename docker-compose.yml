@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: nginx.dockerfile
     environment:
-      - VIRTUAL_HOST=www.go3pos.com
+      - VIRTUAL_HOST=www.go3pos.com,go3pos.com
     ports:
       - "8000:80"
     volumes:
