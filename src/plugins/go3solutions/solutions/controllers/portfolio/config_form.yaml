@@ -1,0 +1,10 @@
+name: Portfolio
+form: $/go3solutions/solutions/models/portfolio/fields.yaml
+modelClass: Go3solutions\Solutions\Models\Portfolio
+defaultRedirect: go3solutions/solutions/portfolio
+create:
+    redirect: 'go3solutions/solutions/portfolio/update/:id'
+    redirectClose: go3solutions/solutions/portfolio
+update:
+    redirect: go3solutions/solutions/portfolio
+    redirectClose: go3solutions/solutions/portfolio

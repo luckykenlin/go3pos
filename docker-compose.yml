@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  site:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    environment:
+      - VIRTUAL_HOST=www.go3.com
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - services_multiple_site
+
+  php:
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8080:9000"
+    networks:
+      - services_multiple_site
+    external_links:
+      - mysql:mysql
+      - redis:redis
+
+networks:
+  services_multiple_site:
+    external: true

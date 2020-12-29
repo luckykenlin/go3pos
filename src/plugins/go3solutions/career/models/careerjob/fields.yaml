@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: 'Job Title'
+        span: full
+        type: text
+    description:
+        label: 'Job description'
+        size: ''
+        span: full
+        type: richeditor

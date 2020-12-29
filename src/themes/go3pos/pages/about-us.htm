@@ -1,0 +1,90 @@
+title = "Go3pos | about us"
+url = "/aboutus"
+layout = "default"
+meta_title = "Go3pos | about us"
+
+[viewBag]
+activeMenu = "about-us"
+==
+<div role="main" class="main">
+    {% set activePage = 'blog' %}
+    {% partial 'components/banner'
+    bgImage='/themes/go3pos/assets/images/ts-banner.jpg'
+    title='GO3POS'
+    subTitle='The Best Point of Sale'
+    description='The POS system with everything you need and nothing you don’t.'
+    %}
+    <div class="container pb-1">
+
+        <div class="row pt-4">
+            <div class="col">
+                <div class="overflow-hidden mb-3">
+                    <h2 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation animated maskUp appear-animation-visible"
+                        data-appear-animation="maskUp" style="animation-delay: 100ms;">
+                        <span>The New Way to </span>
+                        <span class="word-rotator-words bg-primary" style="width: 144.75px;">
+										<b class="is-hidden">Success</b>
+										<b class="is-hidden">Advance</b>
+										<b class="is-visible">Progress</b>
+									</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-lg-10">
+                <div class="overflow-hidden">
+                    <p class="lead mb-0 appear-animation animated maskUp appear-animation-visible"
+                       data-appear-animation="maskUp" data-appear-animation-delay="250" style="animation-delay: 250ms;">
+                        Go3pos helps small and medium-sized businesses by providing them easy ways to gain more sales
+                        and at the same time promote their business。
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn" data-appear-animation-delay="450" style="animation-delay: 450ms;">
+                <a href="{{ 'contact-us'|page }}" class="btn btn-modern btn-primary mt-1">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+    <section class="section section-default border-0 my-5 appear-animation" data-appear-animation="fadeIn"
+             data-appear-animation-delay="500">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 appear-animation" data-appear-animation="fadeInLeftShorter"
+                     data-appear-animation-delay="600">
+                    <div class="owl-carousel owl-theme nav-inside mb-0"
+                         data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 6000, 'loop': true}">
+                        <div>
+                            <img alt="" class="img-fluid" src="{{ 'assets/images/mobile-pos.png' | theme}}">
+                        </div>
+                        <div>
+                            <img alt="" class="img-fluid" src="{{ 'assets/images/qr-e-menu.png' | theme}}">
+                        </div>
+                        <div>
+                            <img alt="" class="img-fluid" src="{{ 'assets/images/novo-prime-app.png' | theme}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="overflow-hidden mb-2">
+                        <h2 class="text-color-dark font-weight-normal text-5 mb-0 pt-0 mt-0 appear-animation"
+                            data-appear-animation="maskUp" data-appear-animation-delay="800">Who <strong
+                                class="font-weight-extra-bold">We Are</strong></h2>
+                    </div>
+                    <p class="appear-animation" data-appear-animation="fadeInUpShorter"
+                       data-appear-animation-delay="700">Go3pos helps small and medium-sized businesses by providing
+                        them easy ways to gain more sales and at the same time promote their business.</p>
+                    <p class="mb-0 appear-animation" data-appear-animation="fadeInUpShorter"
+                       data-appear-animation-delay="900"> Our main objective is to help businesses to get a high
+                        Return-of-Investment and gather more sales by using modern technologies. Nowadays, many people
+                        are using internet as their primary tool when looking for perfect place to eat. And we can help
+                        you make on top of every search engines so that many people can see you. </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    {% partial 'common/brand-slider' %}
+</div>

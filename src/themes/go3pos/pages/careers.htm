@@ -1,0 +1,98 @@
+title = "Go3pos | careers"
+url = "/careers"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+activeMenu = "careers"
+
+[careerjob]
+==
+
+<div role="main" class="main">
+    <div class="container py-5 mt-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="overflow-hidden mb-2">
+                    <h2 class="font-weight-normal text-7 mb-2 appear-animation" data-appear-animation="maskUp"
+                        data-appear-animation-delay="200">Find Your <strong
+                            class="font-weight-extra-bold">Opportunity</strong></h2>
+                </div>
+                <div class="overflow-hidden mb-4">
+                    <p class="lead mb-0 appear-animation" data-appear-animation="maskUp"
+                       data-appear-animation-delay="400">It's through curiosity and looking at opportunities in new ways
+                        that we've always mapped our path.</p>
+                </div>
+                <p class="text-color-light-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
+                   data-appear-animation-delay="600">Someone's sitting in the shade today because someone planted a tree
+                    a long time ago.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial testimonial-primary appear-animation" data-appear-animation="fadeIn"
+                     data-appear-animation-delay="800">
+                    <blockquote>
+                        <p class="mb-0">A wise man will make more opportunities than he finds.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-default border-0 m-0">
+        <div class="container py-4">
+
+            <div class="row pb-4">
+                <div class="col-md-8">
+                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                        <h4 class="mt-2 mb-2">Current <strong>Openings</strong></h4>
+
+                        {% component 'careerjob' %}
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+                        <div class="toggle toggle-primary toggle-simple" data-plugin-toggle>
+                            <section class="toggle active">
+                                <label>Our Benefits</label>
+                                <div class="toggle-content">
+                                    <p>
+                                        Health insurance
+                                        <br>
+                                        Paid time off
+                                        <br>
+                                        Flexible schedule
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="toggle">
+                                <label>Our Culture</label>
+                                <div class="toggle-content">
+                                    <p>A pessimist sees the difficulty in every opportunity; an optimist sees the
+                                        opportunity in every difficulty.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+{% put modals %}
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="formModalLabel">Apply Job</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            {% component 'careerjob::jobform' %}
+        </div>
+    </div>
+</div>
+{% endput %}

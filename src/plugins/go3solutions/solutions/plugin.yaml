@@ -1,0 +1,11 @@
+plugin:
+    name: 'go3solutions.solutions::lang.plugin.name'
+    description: 'go3solutions.solutions::lang.plugin.description'
+    author: Go3solutions
+    icon: oc-icon-cubes
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Portfolio
+        url: go3solutions/solutions/portfolio
+        icon: icon-birthday-cake

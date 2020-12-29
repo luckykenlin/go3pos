@@ -1,0 +1,12 @@
+list: $/go3solutions/career/models/careerjob/columns.yaml
+modelClass: Go3solutions\Career\Models\CareerJob
+title: Career
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'go3solutions/career/career/update/:id'

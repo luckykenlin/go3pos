@@ -1,0 +1,11 @@
+plugin:
+    name: 'go3solutions.career::lang.plugin.name'
+    description: 'go3solutions.career::lang.plugin.description'
+    author: Go3solutions
+    icon: oc-icon-joomla
+    homepage: ''
+navigation:
+    main-job-item:
+        label: Jobs
+        url: go3solutions/career/career
+        icon: icon-joomla

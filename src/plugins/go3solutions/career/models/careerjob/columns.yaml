@@ -1,0 +1,5 @@
+columns:
+    title:
+        label: 'Job title'
+        type: text
+        searchable: true

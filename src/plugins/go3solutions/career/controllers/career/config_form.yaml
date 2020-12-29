@@ -1,0 +1,10 @@
+name: Career
+form: $/go3solutions/career/models/careerjob/fields.yaml
+modelClass: Go3solutions\Career\Models\CareerJob
+defaultRedirect: go3solutions/career/career
+create:
+    redirect: 'go3solutions/career/career/update/:id'
+    redirectClose: go3solutions/career/career
+update:
+    redirect: go3solutions/career/career
+    redirectClose: go3solutions/career/career

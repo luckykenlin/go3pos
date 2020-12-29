@@ -1,0 +1,177 @@
+<header id="header" class="header-narrow header-semi-transparent-light"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}"
+        style="height: 90px;">
+    <div class="header-body">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <img class="logo-default" alt="Porto" width="324" height="212"
+                                 src="{{'assets/images/logo-default.png' | theme }}">
+                            <a href="{{ 'home'|page }}">
+                                <img class="logo-small" alt="Porto" width="157" height="38"
+                                     src="{{'assets/images/logo.png' | theme }}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-stripe order-2 order-lg-1">
+                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li>
+                                            <a class="nav-link {{ viewBag.activeMenu == 'home' ? 'active current-page-active' : ''}}"
+                                               href="{{ 'home'|page }}">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle {{ viewBag.activeMenu == 'solutions' ? 'active current-page-active' : ''}}"
+                                               href="#">
+                                                Solutions
+                                                <i class="fas fa-chevron-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                       href="{{'small-medium-business' | page}}">Small & Medium
+                                                    Business</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'corporate-group' | page}}">Corporate Group
+                                                </a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'shopping-mall' | page}}">Shopping Mall
+                                                </a></li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'customer' | page}}">Customer & QR E-Menu
+                                                </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle dropdown-toggle {{ viewBag.activeMenu == 'software' ? 'active current-page-active' : ''}}"
+                                               href="#">
+                                                Software / Novotill
+                                                <i class="fas fa-chevron-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-pos' | page}}">Novo Pos</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-mpos' | page}}">Novo MPos</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-manager' | page}}">Novo Manager</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-kds' | page}}">KDS</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-waiting-list' | page}}">Waiting List</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'hardware' ? 'active' : ''}}"
+                                               href="{{ 'hardware'|page }}">
+                                                Hardware
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-handheld' | page}}">Handheld</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-terminals' | page}}">Terminals</a></li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-printer' | page}}">Printer</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-dual-display' | page}}">Dual Display</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-barcode-scanner' | page}}">Barcode Scanner</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                       href="{{'novo-cash-drawer' | page}}">Cash Drawer</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                               href="{{ 'services'|page }}">
+                                                Services
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#credit-card-processing">
+                                                        Credit Card Processing
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#online-ordering">
+                                                        Online Ordering
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#loyalty">
+                                                        Loyalty / Gift Card
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#website-design">
+                                                        Website Design
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#marketing">
+                                                        Marketing / Seo
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link {{ viewBag.activeMenu == 'about-us' ? 'active current-page-active' : ''}}"
+                                               href="{{'about-us' | page}}">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link {{ viewBag.activeMenu == 'contact-us' ? 'active current-page-active' : ''}}"
+                                               href="{{'contact-us' | page}}">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <button class="btn header-btn-collapse-nav" data-toggle="collapse"
+                                    data-target=".header-nav-main nav">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="header-nav-features header-nav-features-no-border d-none d-sm-block order-1 order-lg-2">
+                            <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean ml-0">
+                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
+                                                                     title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                                                                    title="Twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
+                                                                     title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

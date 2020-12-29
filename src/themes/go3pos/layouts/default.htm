@@ -1,0 +1,61 @@
+description = "The Go3 POS software is designed for all types of food services businesses. It is an easy-to-use and feature-rich restaurant management solution that can streamline daily operation and increase customer loyalty. Various Functions for Dine-in and Quick-Service Restaurants,2 Line Caller ID, Multi-Language support, Payment Options : EMV Ready, PCI Compliant,, Major Payment Processors Supported,User-Defined Interface : Customizable Menu, Table Map,,Screen Lay-out,Employee Management, Build in Time Clock.,CRM Functions : Membership and Loyalty Program,Extensive Sales Reports,POS Peripherals Supported"
+keywords= "pos, pos system, point of sale, custom gift card, custom plastic membership cards, membership card printing, gift card printing, pos machine, point of sale systems, credit card offers , credit card processing, point of sales, point of sale software, retail pos, retail pos system, online gift cards , point of sale terminal , best pos system , pos system for sale , pos terminal , point of sale systems for small business , pos equipment , restaurant pos system , credit card terminal , restaurant pos , online credit card , pos computer , retail point of sale systems , google business view , google virtual tour , google local seo , google maps business view , google street view for business , google street view photographer , google virtual tour for business , google street view inside , google business view cost , google street view tour , google business seo salon appointment book , salon booking app , salon appointment app , scheduling software , online salon booking system , salon software , salon booking system , spa booking apps , salon computer systems , salon management software , hair salon booking system , hair salon software , salon appointment system , salon scheduling app"
+==
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title }}</title>
+    <meta name="description"
+          content="{{ this.page.meta_description ?? this.layout.description ?? ''}}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="keywords"
+          content="{{ this.layout.description ?? ''}}">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400"
+          rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{{ 'assets/images/favicon.ico'|theme }}">
+
+    <!-- Vendor CSS -->
+    {% partial 'site/head-css' %}
+
+    <!-- Head Libs -->
+    <script src="{{ 'assets/vendor/modernizr/modernizr.min.js'|theme }}"></script>
+
+    {% styles %}
+
+    {% partial 'site/head-scripts' %}
+</head>
+<body class="loading-overlay-showing"
+      data-plugin-page-transition
+      data-loading-overlay
+      data-plugin-options="{'hideDelay': 500}"
+>
+<div class="loading-overlay">
+    <div class="bounce-loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<div class="body">
+    <!-- Header -->
+    {% partial 'site/header' %}
+
+    <!-- Content -->
+    {% page %}
+
+    <!-- Footer -->
+    {% partial 'site/footer' %}
+</div>
+{% partial 'site/footer-scripts' %}
+{% scripts %}
+
+{% framework extras %}
+{% placeholder modals %}
+</body>
+</html>

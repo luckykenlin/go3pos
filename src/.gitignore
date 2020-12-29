@@ -1,0 +1,8 @@
+/node_modules
+/storage/*.key
+/vendor
+/test
+/.idea
+npm-debug.log
+yarn-error.log
+.env

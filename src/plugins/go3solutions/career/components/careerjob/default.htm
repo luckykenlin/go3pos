@@ -1,0 +1,32 @@
+<div class="accordion accordion-modern accordion-modern-grey-scale-1 without-bg mt-4"
+     id="accordion11">
+    {% for job in careerjob.jobs %}
+
+    <div class="card card-default mb-2">
+        <div class="card-header">
+            <h4 class="card-title m-0">
+                <a class="accordion-toggle text-3" data-toggle="collapse"
+                   id="jobTitle{{loop.index}}"
+                   data-parent="#accordion11" href="#job{{loop.index}}">
+                    {{ job.title }}
+                </a>
+            </h4>
+        </div>
+        <div id="job{{loop.index}}" class="collapse {{loop.index == 1? 'show' : ''}}">
+            <div class="card-body mt-3">
+                {{html_limit(job.description, 5000)|raw}}
+                <a href="#"
+                   class="btn btn-modern btn-dark"
+                   data-title="{{job.title}}"
+                   data-toggle="modal" data-target="#formModal"
+                   onclick="$('#jobTitle').val($(this).data('title'))"
+                >
+                    Apply
+                </a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="no-data">No jobs found.</div>
+    {% endfor %}
+</div>

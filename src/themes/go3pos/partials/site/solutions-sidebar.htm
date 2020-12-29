@@ -1,0 +1,41 @@
+<aside class="sidebar" id="sidebar" data-plugin-sticky
+       data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+    <h5 class="font-weight-bold">Solutions</h5>
+    <ul class="nav nav-list flex-column mb-5">
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'virtual-terminal' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="{{ 'virtual-terminal'|page }}">Virtual Terminals</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'counter-terminal' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="{{ 'counter-terminal'|page }}">Counter
+            Terminals</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'mobile-payment' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="{{ 'mobile-payment'|page }}">Mobile
+            Payment</a></li>
+        <li class="nav-item">
+            <a class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'pos-system' ? 'active site-bar__nav-link__a__active' : ''}}"
+               href="#">POS System</a>
+        </li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'loyalty-gift-card' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="#">Loyalty /
+            Gift Card</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'marketing-plan' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="#">Marketing
+            Plan</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'website-app-design' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="#">Website &
+            App Design</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'online-ordering' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="{{ 'online-ordering'|page }}">Online
+            Ordering</a></li>
+        <li class="nav-item"><a
+                class="nav-link site-bar__nav-link__a__hover {{ viewBag.activeSubMenu == 'reservation-service' ? 'active site-bar__nav-link__a__active' : ''}}"
+                href="#">Reservation
+            Service</a></li>
+    </ul>
+</aside>

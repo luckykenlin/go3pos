@@ -1,0 +1,63 @@
+<form data-request-files
+      data-request="onSubmit"
+      data-request-validate
+      data-request-flash
+      data-request-success="$('#formModal').modal('hide')"
+      class="mb-4"
+      id="applyJobForm"
+>
+    <div class="modal-body">
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 required text-left text-sm-right mb-0">Name</label>
+            <div class="col-sm-9">
+                <input type="text" name="name" id="jobName" class="form-control" placeholder="Type your name...">
+                <span data-validate-for="name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 required text-left text-sm-right mb-0">Email</label>
+            <div class="col-sm-9">
+                <input type="email" name="email" id="jobEmail" class="form-control" placeholder="Type your email..."
+                       required>
+                <span data-validate-for="email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 required text-left text-sm-right mb-0">Job Title</label>
+            <div class="col-sm-9">
+                <input type="text"
+                       name="job_title"
+                       class="form-control"
+                       placeholder="Type an job title"
+                       id="jobTitle"
+                       readonly>
+            </div>
+            <span data-validate-for="job_title" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 required text-left text-sm-right mb-0">Message</label>
+            <div class="col-sm-9">
+                <textarea rows="5" id="jobMessage" class="form-control" name="message"
+                          placeholder="Type your message..."
+                          required></textarea>
+                <span data-validate-for="message" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 required text-left text-sm-right mb-0">Resume</label>
+            <div class="col-sm-9">
+                <input type="file"
+                       class="form-control-file"
+                       name="resume"
+                       id="jobresume"
+                       required
+                >
+                <span data-validate-for="resume" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Apply</button>
+    </div>
+</form>

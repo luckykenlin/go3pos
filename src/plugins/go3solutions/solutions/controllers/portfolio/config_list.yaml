@@ -1,0 +1,12 @@
+list: $/go3solutions/solutions/models/portfolio/columns.yaml
+modelClass: Go3solutions\Solutions\Models\Portfolio
+title: Portfolio
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'go3solutions/solutions/portfolio/update/:id'

@@ -1,0 +1,4 @@
+title: Career
+modelClass: Go3solutions\Career\Models\CareerJob
+toolbar:
+    buttons: reorder_toolbar

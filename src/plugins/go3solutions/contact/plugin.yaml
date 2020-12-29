@@ -1,0 +1,6 @@
+plugin:
+    name: 'go3solutions.contact::lang.plugin.name'
+    description: 'go3solutions.contact::lang.plugin.description'
+    author: Go3solutions
+    icon: oc-icon-adjust
+    homepage: ''

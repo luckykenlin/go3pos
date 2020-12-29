@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table go3solutions_career_job'
+    - builder_table_create_go3solutions_career_job.php

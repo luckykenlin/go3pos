@@ -1,0 +1,18 @@
+title = "Go3pos | Services"
+url = "/services"
+layout = "default"
+meta_title = "Go3pos | Services"
+is_hidden = 0
+
+[viewBag]
+activeMenu = "services"
+==
+<div role="main" class="main">
+    {% partial 'components/banner'
+    title='Services'
+    bgImage='/themes/go3pos/assets/images/service_banner.jpg'
+    subTitle='Call us at 1 (800) 218-0228, Mon–Fri, 10 a.m.–6 p.m. PT.'
+    description='The POS system with everything you need and nothing you don’t.'
+    %}
+    {% partial 'service/content' %}
+</div>

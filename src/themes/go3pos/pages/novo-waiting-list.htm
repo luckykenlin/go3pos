@@ -1,0 +1,73 @@
+title = "Go3pos | Novo Waiting List"
+url = "/novo-waiting-list"
+layout = "default"
+meta_title = "Go3pos | Novo Waiting List"
+
+[contactform]
+[viewBag]
+activeMenu = "software"
+activeSubMenu = "novo-waiting-list"
+==
+<div role="main" class="main">
+    <section
+            class="page-header mb-0 page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7"
+            style="background-image: url('{{ 'assets/images/novo-waiting-list.png' | theme}}')">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-5 mb-5">
+                    <h1 class="font-weight-bold text-12 line-height-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"
+                        data-appear-animation-duration="750" style="animation-delay: 600ms;">Novo Waiting List</h1>
+                    <p class="custom-font-size-1 appear-animation animated fadeInUpShorter appear-animation-visible text-light"
+                       data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900"
+                       data-appear-animation-duration="750" style="animation-delay: 900ms;">Novo Waiting List app allows customers to order ahead - on-spot or remotely, before tables are available for them. It facilitates your management in the restaurant and improves efficiency greatly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pb-1 my-5 ">
+        <div class="row pt-4">
+            <div class="col">
+                <div class="overflow-hidden mb-3">
+                    <h2 class="font-weight-bold text-8 mb-0 appear-animation animated maskUp appear-animation-visible"
+                        data-appear-animation="maskUp" data-appear-animation-delay="300"
+                        style="animation-delay: 300ms;">
+                        Novo Waiting List
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="overflow-hidden">
+                    <p class="lead mb-0 appear-animation animated maskUp appear-animation-visible"
+                       data-appear-animation="maskUp" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                        Novo Waiting List app allows customers to order ahead - on-spot or remotely, before tables are available for them. It facilitates your management in the restaurant and improves efficiency greatly.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                <a href="#" data-toggle="modal" data-target="#formModal" class="btn btn-modern btn-dark mt-1">
+                    Get Free Trial!
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% put modals %}
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="formModalLabel">Get a free custom quote for your business</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            {% component 'contactform::contactfordemo' %}
+        </div>
+    </div>
+</div>
+{% endput %}

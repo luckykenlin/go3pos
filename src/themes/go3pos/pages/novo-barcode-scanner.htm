@@ -1,0 +1,126 @@
+title = "Go3pos | Novo Barcode Scanner"
+url = "/novo-barcode-scanner"
+layout = "default"
+meta_title = "Go3pos | Novo Barcode Scanner"
+
+[contactform]
+[viewBag]
+activeMenu = "hardware"
+activeSubMenu = "novo-barcode-scanner"
+==
+<div role="main" class="main">
+    <section class="section section-tertiary section-no-border pb-3 my-0">
+        <div class="container">
+            <div class="row justify-content-end mt-4">
+                <div class="col-lg-10 pt-4 mt-4 text-right">
+                    <h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">Barcode Scanner</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section
+                class="page-header mb-0 page-header-modern page-header-background page-header-background-md"
+                style="background-image: url('{{ 'assets/images/novo-barcode-scanner.png' | theme}}'); height: 500px">
+        </section>
+    </div>
+    <div class="container pb-1 mt-3 ">
+        <div class="row pt-4">
+            <div class="col">
+                <div class="overflow-hidden mb-3">
+                    <h2 class="font-weight-bold text-8 mb-0 appear-animation animated maskUp appear-animation-visible"
+                        data-appear-animation="maskUp" data-appear-animation-delay="300"
+                        style="animation-delay: 300ms;">
+                        CT10 Handheld Bar Code Wired Scanner
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="overflow-hidden">
+                    <ul class="list list-icons list-icons-style-2">
+                        <li class="font-weight-bold text-dark"><i class="fas fa-check"></i>Product quality?</li>
+                        <p class="my-2">We strictly control every detail of production and every product is inspected by
+                            our team before delivery</p>
+                        <li class="font-weight-bold text-dark"><i class="fas fa-check"></i>What support can we get?</li>
+                        <p class="my-2">All kind of functions with hardware and technical support of with the
+                            software.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 appear-animation animated fadeIn appear-animation-visible"
+                 data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                <a href="#" data-toggle="modal" data-target="#formModal" class="btn btn-modern btn-dark mt-1">
+                    Get Free Trial!
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row mt-4">
+            <div class="col-lg col-sm-12 text-center">
+                <table class="table table-striped">
+                    <tbody>
+                    <tr>
+                        <th>
+                            Scan Element Type
+                        </th>
+                        <th>
+                            Laser
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Colour Depth
+                        </td>
+                        <td>
+                            32 Bit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Interface Type
+                        </td>
+                        <td>
+                            USB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Max Paper Size
+                        </td>
+                        <td>
+                            4mil
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Power Supply
+                        </td>
+                        <td>
+                            Rechargeable Lithium Battery
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% put modals %}
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="formModalLabel">Get a free custom quote for your business</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            {% component 'contactform::contactfordemo' %}
+        </div>
+    </div>
+</div>
+{% endput %}

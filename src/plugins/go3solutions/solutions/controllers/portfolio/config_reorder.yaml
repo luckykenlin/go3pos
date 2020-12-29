@@ -1,0 +1,4 @@
+title: Portfolio
+modelClass: Go3solutions\Solutions\Models\Portfolio
+toolbar:
+    buttons: reorder_toolbar
