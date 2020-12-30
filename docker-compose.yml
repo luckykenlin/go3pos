@@ -5,12 +5,13 @@ services:
     build:
       context: .
       dockerfile: nginx.dockerfile
-    environment:
-      - VIRTUAL_HOST=www.go3pos.com,go3pos.com
+    container_name: go3pos_site
     ports:
       - "8000:80"
     volumes:
       - ./src:/var/www/html
+    environment:
+      - VIRTUAL_HOST=www.go3pos.com,go3pos.com
     depends_on:
       - php
     networks:
@@ -20,6 +21,7 @@ services:
     build:
       context: .
       dockerfile: php.dockerfile
+    container_name: go3pos_php
     volumes:
       - ./src:/var/www/html
     ports:
