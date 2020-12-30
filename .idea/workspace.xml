@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40410d38-386f-431a-bb40-3d9a93d45eeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/go3pos.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,22 +142,40 @@
       <updated>1609273915739</updated>
       <workItem from="1609273916834" duration="1696000" />
       <workItem from="1609279975090" duration="5964000" />
-      <workItem from="1609296223367" duration="3477000" />
+      <workItem from="1609296223367" duration="3915000" />
     </task>
+    <task id="LOCAL-00001" summary="fix https bug">
+      <created>1609300196491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609300196491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fix https bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix https bug" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="426" y="119" key="CommitChangelistDialog2" timestamp="1609298896147">
+    <state x="426" y="119" key="CommitChangelistDialog2" timestamp="1609300196149">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="426" y="119" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1609298896147" />
+    <state x="426" y="119" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1609300196149" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1609298895347">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1609298895347" />
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609300198393">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1609300198393" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1609297605800">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
